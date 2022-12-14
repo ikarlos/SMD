@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- slick -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="css/style.css">
+    <title>SMD</title>
+</head>
+
+<body>
+    <header class="landing">
+        <nav class="top-nav">
+            <span class="logo-conatiner"> SMD </span>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#carousel">About</a></li>
+                <li><a href="pages/courses.html">Courses</a></li>
+            </ul>
+            <span class="sign-up"><a href="#">sign up</a></span>
+        </nav>
+        <div class="hero-text">
+            Student <span> Material </span> Desk
+        </div>
+
+        <div class="see-more">
+           <div> <a href="#carousel">See more</a></div>
+            <div class="arrow-icon"><a href="#carousel"><i class="fa-solid fa-arrow-down"></i></a></div>
+        </div>
+
+
+    </header>
+    <section class="slider">
+    <div class="carousel one-time" id="carousel">
+        <div class="pdf-books carousel-item">
+            <div class="slider-content">
+                <h1>PDF </h1>
+                <h2>E-Books</h2>
+            </div>
+        </div>
+        <div class="papers carousel-item">
+            <div class="slider-content">
+                <h1>Previous year</h1>
+                <h2>papers</h2>
+            </div>
+        </div>
+        <div class="important-topics carousel-item">
+            <div class="slider-content">
+                <h1>important</h1>
+                <h2>topics</h2>
+            </div>
+        </div>
+        <div class="micro-notes carousel-item">
+            <div class="slider-content">
+                <h1>micro</h1>
+                <h2>notes</h2>
+            </div>
+        </div>
+       
+    </div>
+    <div class="btn know-more-btn"><a href="pages/courses.html">know more</a></div>
+</section>
+
+</body>
+<!-- js file -->
+<script src="js/script.js"></script>
+<!-- FONT AWESOME -->
+<script
+  src="https://kit.fontawesome.com/eeca1a4b02.js"
+  crossorigin="anonymous"
+></script>
+<!-- jquery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- slick -->
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+    $('.one-time').slick({
+  dots: false,
+  infinite: true,
+  autoplay: true,
+  pauseOnFocus: false,
+  pauseOnHover: false,
+  speed: 1000,
+  slidesToShow: 1,
+  adaptiveHeight: true
+});
+$('.slick-next').hide();
+$('.slick-prev').hide();		
+</script>
+
+</html>
